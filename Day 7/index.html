@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CodeEvolutionSurveyForm</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Code Evolution Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="your name" required minlength="4" maxlength="8" size="10" />
+            <section>
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="example@email.com" required min="4" max="8"
+                    size="10" />
+            </section>
+            <section>
+                <label id="number-label" for="age">Age:(optional)</label>
+                <input id="number" type="number" name="age" placeholder="age" min="18" max="110" />
+            </section>
+            <section>
+                <p>Which option best describes your current role?</p>
+                <select name="dropdownt" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full-Time Job</option>
+                    <option value="full-time-learner">Full-Time Learner</option>
+                    <option selected value="prefer-not-say">Prefer not say</option>
+                </select>
+            </section>
+            <section>
+                <p>Would you recommend Evolution Code Community to a friend?</p>
+                <label for="defenetly-option">Defenetly</label>
+                <input checked id="defenetly-option" type="radio" name="option" value="defenetly" />
+                <label for="maybe-option">Maybe</label>
+                <input id="maybe-option" type="radio" name="option" value="maybe" />
+                <label for="not-sure-option">Not sure</label>
+                <input id="not-sure-option" type="radio" name="option" value="not-sure" />
+            </section>
+            <section>
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <input checked type="checkbox" id="chellenges" name="chellenges" value="chellenges" />
+                <label for="workshops">Workshops</label>
+                <input type="checkbox" id="workshops" name="workshops" value="workshops" />
+                <label for="chat">Chat</label>
+                <input type="checkbox" id="chat" name="chat" value="chat" />
+                <label for="vidios">Vidios</label>
+                <input type="checkbox" id="vidios" name="vidios" value="vidios" />
+                <label for="telegram-bot">Telegram-Bot</label>
+                <input type="checkbox" id="telegram-bot" name="telegram-bot" value="telegram-bot" />
+            </section>
+            <section>
+                <textarea>Enter any comments here...</textarea>
+                <input id="submit" type="submit" submit="submit"></input>
+        </form>
+    </main>
+    <footer>Created by <a href="https://linkedin.com/in/valentyn-medvediuk" target="_blank">Valentyn Medvediuk</a>
+    </footer>
+</body>
+
+</html>
