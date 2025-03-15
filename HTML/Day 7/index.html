@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>CodeEvolutionSurveyForm</title>
 </head>
 
@@ -14,16 +14,16 @@
     <main>
         <form id="survey-form">
             <label id="name-label" for="name">Name:</label>
-            <input id="name" type="text" placeholder="your name" required minlength="4" maxlength="8" size="10" />
-            <section>
+            <input id="name" type="text" placeholder="your name" required minlength="4" maxlength="8" size="10">
+            <div>
                 <label id="email-label" for="email">Email:</label>
-                <input required id="email" type="email" name="email" placeholder="example@email.com" size="10" />
-            </section>
-            <section>
+                <input required id="email" type="email" name="email" placeholder="example@email.com" size="10">
+            </div>
+            <div>
                 <label id="number-label">Age:(optional)</label>
-                <input id="number" type="number" name="age" placeholder="age" min="18" max="110" />
-            </section>
-            <section>
+                <input id="number" type="number" name="age" placeholder="age" min="18" max="110">
+            </div>
+            <div>
                 <p>Which option best describes your current role?</p>
                 <select name="dropdownt" id="dropdown">
                     <option value="student">Student</option>
@@ -31,28 +31,28 @@
                     <option value="full-time-learner">Full-Time Learner</option>
                     <option selected value="prefer-not-say">Prefer not say</option>
                 </select>
-            </section>
-            <section>
+            </div>
+            <div>
                 <p>Would you recommend Evolution Code Community to a friend?</p>
                 <label for="defenetly-option">Defenetly</label>
-                <input checked id="defenetly-option" type="radio" name="option" value="defenetly" />
+                <input checked id="defenetly-option" type="radio" name="option" value="defenetly">
                 <label for="maybe-option">Maybe</label>
-                <input id="maybe-option" type="radio" name="option" value="maybe" />
+                <input id="maybe-option" type="radio" name="option" value="maybe">
                 <label for="not-sure-option">Not sure</label>
-                <input id="not-sure-option" type="radio" name="option" value="not-sure" />
-            </section>
-            <section>
+                <input id="not-sure-option" type="radio" name="option" value="not-sure">
+            </div>
+            <div>
                 <p>What is your favorite feature of freeCodeCamp?</p>
-                <input checked type="checkbox" id="chellenges" name="chellenges" value="chellenges" />
+                <input checked type="checkbox" id="chellenges" name="chellenges" value="chellenges">
                 <label for="workshops">Workshops</label>
-                <input type="checkbox" id="workshops" name="workshops" value="workshops" />
+                <input type="checkbox" id="workshops" name="workshops" value="workshops">
                 <label for="chat">Chat</label>
-                <input type="checkbox" id="chat" name="chat" value="chat" />
+                <input type="checkbox" id="chat" name="chat" value="chat">
                 <label for="vidios">Vidios</label>
-                <input type="checkbox" id="vidios" name="vidios" value="vidios" />
+                <input type="checkbox" id="vidios" name="vidios" value="vidios">
                 <label for="telegram-bot">Telegram-Bot</label>
-                <input type="checkbox" id="telegram-bot" name="telegram-bot" value="telegram-bot" />
-            </section>
+                <input type="checkbox" id="telegram-bot" name="telegram-bot" value="telegram-bot">
+            </div>
             <textarea>Enter any comments here...</textarea>
             <button name="submit">Submit</button>
         </form>
