@@ -13,18 +13,19 @@
     </header>
     <main>
         <form id="survey-form">
+            <!-- inputs can be associated with labels by using the for attribute on the label element. -->
             <label id="name-label" for="name">Name:</label>
-            <input id="name" type="text" placeholder="your name" required minlength="4" maxlength="8" size="10">
+            <input id="name" type="text" placeholder="your name" minlength="4" maxlength="8" size="10" required>
             <div>
                 <label id="email-label" for="email">Email:</label>
-                <input required id="email" type="email" name="email" placeholder="example@email.com" size="10">
+                <input id="email" type="email" name="email" placeholder="example@email.com" size="10"required>
             </div>
             <div>
-                <label id="number-label">Age:(optional)</label>
+                <label id="number-label" for="number">Age:(optional)</label>
                 <input id="number" type="number" name="age" placeholder="age" min="18" max="110">
             </div>
             <div>
-                <p>Which option best describes your current role?</p>
+                <legend>Which option best describes your current role?</legend>
                 <select name="dropdownt" id="dropdown">
                     <option value="student">Student</option>
                     <option value="full-time-job">Full-Time Job</option>
@@ -33,7 +34,7 @@
                 </select>
             </div>
             <div>
-                <p>Would you recommend Evolution Code Community to a friend?</p>
+                <legend>Would you recommend Evolution Code Community to a friend?</legend>
                 <label for="defenetly-option">Defenetly</label>
                 <input checked id="defenetly-option" type="radio" name="option" value="defenetly">
                 <label for="maybe-option">Maybe</label>
@@ -42,7 +43,8 @@
                 <input id="not-sure-option" type="radio" name="option" value="not-sure">
             </div>
             <div>
-                <p>What is your favorite feature of freeCodeCamp?</p>
+                <legend>What is your favorite feature of freeCodeCamp?</legend>
+                <label for="chellenges">Chellenges</label>
                 <input checked type="checkbox" id="chellenges" name="chellenges" value="chellenges">
                 <label for="workshops">Workshops</label>
                 <input type="checkbox" id="workshops" name="workshops" value="workshops">
@@ -53,8 +55,10 @@
                 <label for="telegram-bot">Telegram-Bot</label>
                 <input type="checkbox" id="telegram-bot" name="telegram-bot" value="telegram-bot">
             </div>
-            <textarea>Enter any comments here...</textarea>
-            <button name="submit">Submit</button>
+            <div>
+                <textarea>Enter any comments here...</textarea>
+                <input type="submit" value="Submit"></button>
+            </div>
         </form>
     </main>
 </body>
