@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopsForAll</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Order Summary</h2>
+        <p>Product: Cat in a sweter</p>
+        <p><b>Quantity:</b> 1 <b>Price: </b>$20</p>
+        <img src="https://cdn.pixabay.com/photo/2023/04/08/18/09/cat-7909916_960_720.jpg" alt="Cat in a sweter."
+            target="_blank">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form action="card-numerber" method="POST">
+            <div>
+                <label for="card-name">Name of Card Holder</label>
+                <input aria-required="true" type="text" id="card-name" name="card-name" placeholder="John Doe" size="10"
+                    minlength="5" maxlength="20" required>
+            </div>
+            <div>
+                <label for="card-number">Card Number</label>
+                <input aria-required="true" type="number" id="card-number" name="card-number"
+                    placeholder="1234 5678 9012 3456" size="10" minlength="16" maxlength="16" required>
+            </div>
+            <div>
+                <label for="expiry-date">Expiry Date</label>
+                <input aria-required="true" type="date" id="expiry-date" name="expiry-date" required>
+            </div>
+            <div>
+                <label for="cvv">CVV</label>
+                <input aria-required="true" type="number" id="cvv" name="cvv" placeholder="123" size="3" minlength="3"
+                    maxlength="3" required>
+            </div>
+            <div>
+                <input type="submit" id="acction-submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
